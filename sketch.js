@@ -43,6 +43,7 @@ function createLeaves() {
   leaf.x = Math.round(random(100, 300));
   leaf.scale = 0.05;
   leaf.velocityY = 15;
+
 }
 
 
@@ -62,11 +63,7 @@ function draw() {
       createLeaves();
     }
   }
-  if(leaf && apple.isTouching(rabbit)) {
-    leaf.remove();
-    apple.remove();
-  }
- 
+   
 
   drawSprites();
 }
